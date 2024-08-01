@@ -5,7 +5,6 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/spot',
   plugins: [
     vue(),
   ],
@@ -15,3 +14,6 @@ export default defineConfig({
     }
   }
 })
+module.exports = {
+  publicPath: '/spot/'
+}
